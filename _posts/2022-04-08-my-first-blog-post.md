@@ -7,3 +7,5 @@
 ```python
 print('Hello World')
 ```
+
+Link to my new blog https://cameroninlondon.github.io/

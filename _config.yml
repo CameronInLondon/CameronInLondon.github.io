@@ -18,20 +18,20 @@ description: "Blog about data science and analytics." # This will show up in pla
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-# theme: "minima"
+theme: "minima"
 # theme: "hacker"
-remote_theme: pages-themes/hacker@v0.2.0
+# remote_theme: pages-themes/hacker@v0.2.0
 
 rss: rss
 
+# Disable highlighting to use highlightJS instead
 kramdown:
-  syntax_highlighter_opts: rouge
-#     disable: true
+  syntax_highlighter_opts:
+    disable: true
     
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 titles_from_headings:
   strip_title: true

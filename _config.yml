@@ -19,7 +19,7 @@ description: "Blog about data science and analytics." # This will show up in pla
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 # theme: "minima"
-theme: "Hacker"
+theme: "hacker"
 
 rss: rss
 

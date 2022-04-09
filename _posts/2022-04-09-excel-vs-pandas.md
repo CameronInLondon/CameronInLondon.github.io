@@ -14284,7 +14284,8 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-</div>
+
+
 <p>This is one of a few blog posts I am moving from my old blog to here as I feel it is still relevant.</p>
     
 <p>The last two years I have been using more Python Pandas to analyse data and tend to use Pandas as my go to these days. I wanted to write about some of the advantages of Pandas, when to use Pandas, and to compare some of the functions with Excel. So lets get to it.</p>
@@ -14305,7 +14306,6 @@ a.anchor-link {
 </div>
 
 <p>Another reason to use Pandas is when you have a larger dataset. Excel has a hard limit of 1 million rows but will slow down long before this if it has a large numbers of formula's. Pandas is happy to run 100 million rows and more only really dependent on how much memory your PC has. But you will need to optimise your code as datasets get larger.
-
 There is one more advantage over excel which is cost, Pandas is opensource and so has no cost. It was built by Wes McKinney who wanted to produce econometric research in Python. It is now managed by developers around the world who give their free time to maintain and improve the library.</p>   
     
 <b>Compare some common functions excel and Pandas</b>

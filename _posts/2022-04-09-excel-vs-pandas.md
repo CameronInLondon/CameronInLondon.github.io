@@ -14290,27 +14290,7 @@ a.anchor-link {
 
 <p>This is one of a few blog posts I am moving from my old blog to here as I feel it is still relevant.</p>
     
-<p>The last two years I have been using more Python Pandas to analyse data and tend to use Pandas as my go to these days. I wanted to write about some of the advantages of Pandas, when to use Pandas, and to compare some of the functions with Excel. So lets get to it.</p>
-    
-</div>
-    
-<p>Excel is a great tool for quick one off analysis jobs, it is widely used by over 100 million users worldwide. But there are problems with excel like the lack of repeatability and the 1 million row limit. These issues can be addressed by using Python pandas. Pandas is a library for the popular high level programming language Python. Pandas gives the user easy access to a data structure called DataFrames which can be thought of as a two dimensional matrix much like a spreadsheet with rows and columns. Along with a toolset which can match excel blow for blow.</p>
-    
-<b>When to use Pandas</b>
 
-<p>You can in fact replace your analysis workload in Excel with Pandas. This is due to Pandas ability to import and export to Excel files as well as visualise data. When your datsets get larger excel will slow down. Or if you need tools that Excel can not offer e.g. working with unstructured data. Pandas is build with Python which gives you access to over 100,000 Python library's. Should you need to do some web scraping, or do some machine learning these and many more tasks can be done with Python.</p>
-    
-</div>
-
-<b>Advantages of Pandas</b>
-<p>But as mentioned above Pandas is great for repeatability, once you have written a script you can run it over and over with the click of a button. This means when next months data arrives you can drop it in a folder and have it processed, or process it directly off a database.</p>
-    
-</div>
-
-<p>Another reason to use Pandas is when you have a larger dataset. Excel has a hard limit of 1 million rows but will slow down long before this if it has a large numbers of formula's. Pandas is happy to run 100 million rows and more only really dependent on how much memory your PC has. But you will need to optimise your code as datasets get larger.
-There is one more advantage over excel which is cost, Pandas is opensource and so has no cost. It was built by Wes McKinney who wanted to produce econometric research in Python. It is now managed by developers around the world who give their free time to maintain and improve the library.</p>   
-    
-<b>Compare some common functions excel and Pandas</b>
     
 <h2 id="Importing-data">Importing data<a class="anchor-link" href="#Importing-data">&#182;</a></h2>
 </div>

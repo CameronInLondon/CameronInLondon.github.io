@@ -34,7 +34,7 @@ kramdown:
     input: GFM
     syntax_highlighter: rouge
 
-
+# https://chadbaldwin.net/2021/03/14/how-to-build-a-sql-blog.html
 # syntax highlighting two options chadbaldwin's way or just use the standard built-in Github.
 # Problem with Github it does not highlight tSQL
 # Problem with Chads solution is I can not get Python highlighting to work.

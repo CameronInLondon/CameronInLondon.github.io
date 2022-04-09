@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+# <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14255,10 +14255,18 @@ a.anchor-link {
     init_mathjax();
     </script>
     <!-- End of mathjax configuration --></head>
+    
+    
+    
+    
+    
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+    
+<p>This is one of a few blog posts I am moving from my old blog to here as I feel it is still relevant.</p>
+    
 <h2 id="Importing-data">Importing data<a class="anchor-link" href="#Importing-data">&#182;</a></h2>
 </div>
 </div>
@@ -15526,7 +15534,7 @@ dtype: object</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>That's all for now there are many more functions to try, Python has 68 functions and Pandas will have a similar number. Enjoy.</p>
+<p>That's all for now there are many more functions to try. Enjoy.</p>
 
 </div>
 </div>

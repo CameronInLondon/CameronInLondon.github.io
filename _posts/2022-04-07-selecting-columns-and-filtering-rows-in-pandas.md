@@ -14257,11 +14257,25 @@ a.anchor-link {
     init_mathjax();
     </script>
     <!-- End of mathjax configuration --></head>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Following on from my blog on xxxxx. I wanted to discuss filtering and selecting data in Python Pandas.</p>
+<p>Following on from my blog on working with dates in Pandas. I wanted to discuss filtering and selecting data in Python Pandas.</p>
 
 </div>
 </div>

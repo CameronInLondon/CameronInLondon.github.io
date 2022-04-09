@@ -25,9 +25,9 @@ theme: "minima"
 rss: rss
 
 # Disable highlighting to use highlightJS instead
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
+# kramdown:
+#   syntax_highlighter_opts:
+#     disable: true
     
 plugins:
   - jekyll-feed

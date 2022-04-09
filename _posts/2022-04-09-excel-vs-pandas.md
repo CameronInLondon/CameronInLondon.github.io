@@ -1,9 +1,10 @@
-# Pandas vs Excel - why it might be time to start using Pandas
+# Pandas vs Excel - why it might be time to use Pandas
+
 <html>
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>excel_vs_pandas</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>excel_vs_pandas2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14255,55 +14256,32 @@ a.anchor-link {
     init_mathjax();
     </script>
     <!-- End of mathjax configuration --></head>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
+<p>This is one of a few blog posts I am moving from my old blog to here as I feel it is still relevant.</p>
+<h1 id="Pandas-vs-Excel---why-it-might-be-time-to-use-Pandas">Pandas vs Excel - why it might be time to use Pandas<a class="anchor-link" href="#Pandas-vs-Excel---why-it-might-be-time-to-use-Pandas">&#182;</a></h1><p>The last two years I have been using more Python Pandas to analyse data and tend to use Pandas as my go to these days. I wanted to write about some of the advantages of Pandas, when to use Pandas, and to compare some of the functions with Excel. So lets get to it.</p>
+<p>Excel is a great tool for quick one off analysis jobs, it is widely used by over 100 million users worldwide. But there are problems with excel like the lack of repeatability and the 1 million row limit. These issues can be addressed by using Python pandas. Pandas is a library for the popular high level programming language Python. Pandas gives the user easy access to a data structure called DataFrames which can be thought of as a two dimensional matrix much like a spreadsheet with rows and columns. Along with a toolset which can match excel blow for blow.</p>
+<h4 id="When-to-use-Pandas">When to use Pandas<a class="anchor-link" href="#When-to-use-Pandas">&#182;</a></h4><p>You can in fact replace your analysis workload in Excel with Pandas. This is due to Pandas ability to import and export to Excel files as well as visualise data. Should your datsets get larger than say 50,000. Or if you need tools that Excel can not offer. Pandas is build with Python which gives you access to over 100,000 Python library's. Should you need to do some web scraping, or do some machine learning these and many more tasks can be done with Python.</p>
+<h4 id="Advantages-of-Pandas">Advantages of Pandas<a class="anchor-link" href="#Advantages-of-Pandas">&#182;</a></h4><p>But as mentioned above Pandas is great for repeatability, once you have written a script you can run it over and over with the click of a button. This means when next months data arrives you can drop it in a folder and have it processed, or process it directly off a database.</p>
+<p>Another reason to use Pandas is when you have a larger dataset. Excel has a hard limit of 1 million rows but will slow down long before this if it has a large numbers of formula's. Pandas is happy to run 100 million rows and more only really dependent on how much memory your PC has. But you will need to optimise your code as datasets get larger.</p>
+<p>There is one more advantage over excel which is cost, Pandas is opensource and so has no cost. It was built by Wes McKinney who wanted to produce econometric research in Python. It is now managed by developers around the world who give their free time to maintain and improve the library.</p>
+<h4 id="Compare-some-common-functions-excel-and-Pandas">Compare some common functions excel and Pandas<a class="anchor-link" href="#Compare-some-common-functions-excel-and-Pandas">&#182;</a></h4>
+</div>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-<p>This is one of a few blog posts I am moving from my old blog to here as I feel it is still relevant.</p>
-    
-
-    
 <h2 id="Importing-data">Importing data<a class="anchor-link" href="#Importing-data">&#182;</a></h2>
 </div>
 </div>
-
-    
-    
-    
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>There are a number of methods for getting data in to Excel and Pandas. Pandas can import 14 different file types including all the common ones and also some surprising ones like ZIP and MP3.</p>
 <p>I will look at a few of them here.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
@@ -14321,97 +14299,6 @@ a.anchor-link {
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>A</th>
-      <th>B</th>
-      <th>C</th>
-      <th>D</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>33</td>
-      <td>43</td>
-      <td>27</td>
-      <td>91</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>86</td>
-      <td>42</td>
-      <td>76</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>29</td>
-      <td>49</td>
-      <td>5</td>
-      <td>71</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>25</td>
-      <td>26</td>
-      <td>56</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>26</td>
-      <td>92</td>
-      <td>52</td>
-      <td>82</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>11</td>
-      <td>88</td>
-      <td>48</td>
-      <td>19</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14492,45 +14379,45 @@ a.anchor-link {
   <tbody>
     <tr>
       <th>0</th>
-      <td>33</td>
-      <td>43</td>
-      <td>27</td>
-      <td>91</td>
+      <td>37</td>
+      <td>82</td>
+      <td>85</td>
+      <td>97</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>86</td>
-      <td>42</td>
-      <td>76</td>
-      <td>50</td>
+      <td>84</td>
+      <td>24</td>
+      <td>53</td>
+      <td>60</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>29</td>
-      <td>49</td>
-      <td>5</td>
-      <td>71</td>
+      <td>20</td>
+      <td>41</td>
+      <td>1</td>
+      <td>9</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>4</td>
-      <td>25</td>
-      <td>26</td>
-      <td>56</td>
+      <td>91</td>
+      <td>19</td>
+      <td>57</td>
+      <td>71</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>26</td>
-      <td>92</td>
-      <td>52</td>
-      <td>82</td>
+      <td>71</td>
+      <td>33</td>
+      <td>45</td>
+      <td>93</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>11</td>
-      <td>88</td>
       <td>48</td>
-      <td>19</td>
+      <td>66</td>
+      <td>6</td>
+      <td>28</td>
     </tr>
   </tbody>
 </table>
@@ -14606,7 +14493,8 @@ a.anchor-link {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Excel - Alt + Ctrl + T</span>
 
 <span class="c1"># Pandas has a number of way to filter data</span>
-<span class="n">df</span><span class="o">.</span><span class="n">filter</span><span class="p">([</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1"># df.filter([&#39;A&#39;, &#39;B&#39;], axis=1)</span>
+<span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)]</span>
 
 <span class="c1"># Other options are the popular loc() and iloc() functions also the powerful query() and isin() function. There are a bunch of other functions that can be used for filtering like between, notnull. There are also string methods for filter like str.contains</span>
 </pre></div>
@@ -14649,38 +14537,31 @@ a.anchor-link {
       <th></th>
       <th>A</th>
       <th>B</th>
+      <th>C</th>
+      <th>D</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>33</td>
-      <td>43</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>86</td>
-      <td>42</td>
+      <td>37</td>
+      <td>82</td>
+      <td>85</td>
+      <td>97</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>29</td>
-      <td>49</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>25</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>26</td>
-      <td>92</td>
+      <td>20</td>
+      <td>41</td>
+      <td>1</td>
+      <td>9</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>11</td>
-      <td>88</td>
+      <td>48</td>
+      <td>66</td>
+      <td>6</td>
+      <td>28</td>
     </tr>
   </tbody>
 </table>
@@ -14762,55 +14643,55 @@ a.anchor-link {
   <tbody>
     <tr>
       <th>0</th>
-      <td>30</td>
-      <td>57</td>
-      <td>92</td>
-      <td>96</td>
+      <td>75</td>
+      <td>63</td>
+      <td>86</td>
+      <td>39</td>
       <td>a</td>
       <td>a</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>0</td>
-      <td>34</td>
-      <td>6</td>
-      <td>63</td>
+      <td>83</td>
+      <td>57</td>
+      <td>20</td>
+      <td>78</td>
       <td>a</td>
       <td>a</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>6</td>
-      <td>52</td>
-      <td>59</td>
-      <td>59</td>
+      <td>56</td>
+      <td>99</td>
+      <td>86</td>
+      <td>55</td>
       <td>b</td>
       <td>b</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>73</td>
-      <td>12</td>
-      <td>43</td>
-      <td>66</td>
+      <td>2</td>
+      <td>22</td>
+      <td>78</td>
+      <td>45</td>
       <td>b</td>
       <td>b</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>88</td>
-      <td>36</td>
-      <td>61</td>
-      <td>72</td>
+      <td>42</td>
+      <td>93</td>
+      <td>41</td>
+      <td>78</td>
       <td>c</td>
       <td>c</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>94</td>
-      <td>35</td>
-      <td>4</td>
-      <td>6</td>
+      <td>0</td>
+      <td>59</td>
+      <td>29</td>
+      <td>15</td>
       <td>c</td>
       <td>c</td>
     </tr>
@@ -14890,79 +14771,79 @@ a.anchor-link {
   <tbody>
     <tr>
       <th>0</th>
-      <td>33</td>
-      <td>43</td>
-      <td>27</td>
-      <td>91</td>
-      <td>30</td>
-      <td>57</td>
-      <td>92</td>
-      <td>96</td>
+      <td>37</td>
+      <td>82</td>
+      <td>85</td>
+      <td>97</td>
+      <td>75</td>
+      <td>63</td>
+      <td>86</td>
+      <td>39</td>
       <td>a</td>
       <td>a</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>86</td>
-      <td>42</td>
-      <td>76</td>
-      <td>50</td>
-      <td>0</td>
-      <td>34</td>
-      <td>6</td>
-      <td>63</td>
+      <td>84</td>
+      <td>24</td>
+      <td>53</td>
+      <td>60</td>
+      <td>83</td>
+      <td>57</td>
+      <td>20</td>
+      <td>78</td>
       <td>a</td>
       <td>a</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>29</td>
-      <td>49</td>
-      <td>5</td>
-      <td>71</td>
-      <td>6</td>
-      <td>52</td>
-      <td>59</td>
-      <td>59</td>
+      <td>20</td>
+      <td>41</td>
+      <td>1</td>
+      <td>9</td>
+      <td>56</td>
+      <td>99</td>
+      <td>86</td>
+      <td>55</td>
       <td>b</td>
       <td>b</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>4</td>
-      <td>25</td>
-      <td>26</td>
-      <td>56</td>
-      <td>73</td>
-      <td>12</td>
-      <td>43</td>
-      <td>66</td>
+      <td>91</td>
+      <td>19</td>
+      <td>57</td>
+      <td>71</td>
+      <td>2</td>
+      <td>22</td>
+      <td>78</td>
+      <td>45</td>
       <td>b</td>
       <td>b</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>26</td>
-      <td>92</td>
-      <td>52</td>
-      <td>82</td>
-      <td>88</td>
-      <td>36</td>
-      <td>61</td>
-      <td>72</td>
+      <td>71</td>
+      <td>33</td>
+      <td>45</td>
+      <td>93</td>
+      <td>42</td>
+      <td>93</td>
+      <td>41</td>
+      <td>78</td>
       <td>c</td>
       <td>c</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>11</td>
-      <td>88</td>
       <td>48</td>
-      <td>19</td>
-      <td>94</td>
-      <td>35</td>
-      <td>4</td>
+      <td>66</td>
       <td>6</td>
+      <td>28</td>
+      <td>0</td>
+      <td>59</td>
+      <td>29</td>
+      <td>15</td>
       <td>c</td>
       <td>c</td>
     </tr>
@@ -15038,51 +14919,51 @@ a.anchor-link {
   <tbody>
     <tr>
       <th>A</th>
+      <td>60.5</td>
+      <td>55.5</td>
       <td>59.5</td>
-      <td>16.5</td>
-      <td>18.5</td>
     </tr>
     <tr>
       <th>B</th>
-      <td>42.5</td>
-      <td>37.0</td>
-      <td>90.0</td>
+      <td>53.0</td>
+      <td>30.0</td>
+      <td>49.5</td>
     </tr>
     <tr>
       <th>C</th>
-      <td>51.5</td>
-      <td>15.5</td>
-      <td>50.0</td>
+      <td>69.0</td>
+      <td>29.0</td>
+      <td>25.5</td>
     </tr>
     <tr>
       <th>D</th>
-      <td>70.5</td>
-      <td>63.5</td>
-      <td>50.5</td>
+      <td>78.5</td>
+      <td>40.0</td>
+      <td>60.5</td>
     </tr>
     <tr>
       <th>E</th>
-      <td>15.0</td>
-      <td>39.5</td>
-      <td>91.0</td>
+      <td>79.0</td>
+      <td>29.0</td>
+      <td>21.0</td>
     </tr>
     <tr>
       <th>F</th>
-      <td>45.5</td>
-      <td>32.0</td>
-      <td>35.5</td>
+      <td>60.0</td>
+      <td>60.5</td>
+      <td>76.0</td>
     </tr>
     <tr>
       <th>G</th>
-      <td>49.0</td>
-      <td>51.0</td>
-      <td>32.5</td>
+      <td>53.0</td>
+      <td>82.0</td>
+      <td>35.0</td>
     </tr>
     <tr>
       <th>H</th>
-      <td>79.5</td>
-      <td>62.5</td>
-      <td>39.0</td>
+      <td>58.5</td>
+      <td>50.0</td>
+      <td>46.5</td>
     </tr>
   </tbody>
 </table>
@@ -15353,27 +15234,27 @@ Name: str, dtype: object</pre>
   <tbody>
     <tr>
       <th>0</th>
-      <td>33</td>
-      <td>43</td>
-      <td>27</td>
-      <td>91</td>
-      <td>30</td>
-      <td>57</td>
-      <td>92</td>
-      <td>96</td>
+      <td>37</td>
+      <td>82</td>
+      <td>85</td>
+      <td>97</td>
+      <td>75</td>
+      <td>63</td>
+      <td>86</td>
+      <td>39</td>
       <td>a</td>
       <td>a</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>86</td>
-      <td>42</td>
-      <td>76</td>
-      <td>50</td>
-      <td>0</td>
-      <td>34</td>
-      <td>6</td>
-      <td>63</td>
+      <td>84</td>
+      <td>24</td>
+      <td>53</td>
+      <td>60</td>
+      <td>83</td>
+      <td>57</td>
+      <td>20</td>
+      <td>78</td>
       <td>a</td>
       <td>a</td>
     </tr>
@@ -15516,36 +15397,36 @@ dtype: object</pre>
   <tbody>
     <tr>
       <th>a</th>
-      <td>119</td>
-      <td>85</td>
-      <td>103</td>
-      <td>141</td>
-      <td>30</td>
-      <td>91</td>
-      <td>98</td>
-      <td>159</td>
+      <td>121</td>
+      <td>106</td>
+      <td>138</td>
+      <td>157</td>
+      <td>158</td>
+      <td>120</td>
+      <td>106</td>
+      <td>117</td>
     </tr>
     <tr>
       <th>b</th>
-      <td>33</td>
-      <td>74</td>
-      <td>31</td>
-      <td>127</td>
-      <td>79</td>
-      <td>64</td>
-      <td>102</td>
-      <td>125</td>
+      <td>111</td>
+      <td>60</td>
+      <td>58</td>
+      <td>80</td>
+      <td>58</td>
+      <td>121</td>
+      <td>164</td>
+      <td>100</td>
     </tr>
     <tr>
       <th>c</th>
-      <td>37</td>
-      <td>180</td>
-      <td>100</td>
-      <td>101</td>
-      <td>182</td>
-      <td>71</td>
-      <td>65</td>
-      <td>78</td>
+      <td>119</td>
+      <td>99</td>
+      <td>51</td>
+      <td>121</td>
+      <td>42</td>
+      <td>152</td>
+      <td>70</td>
+      <td>93</td>
     </tr>
   </tbody>
 </table>
@@ -15561,7 +15442,7 @@ dtype: object</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>That's all for now there are many more functions to try. Enjoy.</p>
+<p>That's all for now there are many more functions to try, Python has 68 functions and Pandas will have a similar number. Enjoy.</p>
 
 </div>
 </div>

@@ -8,4 +8,8 @@
 print('Hello World')
 ```
 
-Link to my new blog https://cameroninlondon.github.io/
+---
+
+Link to this blogs home page https://cameroninlondon.github.io/
+
+> *If you want to add a quote this is the way.*

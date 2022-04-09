@@ -14285,6 +14285,8 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
 <p>This is one of a few blog posts I am moving from my old blog to here as I feel it is still relevant.</p>
     
@@ -14313,8 +14315,10 @@ There is one more advantage over excel which is cost, Pandas is opensource and s
 <h2 id="Importing-data">Importing data<a class="anchor-link" href="#Importing-data">&#182;</a></h2>
 </div>
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+
+    
+    
+    
 <p>There are a number of methods for getting data in to Excel and Pandas. Pandas can import 14 different file types including all the common ones and also some surprising ones like ZIP and MP3.</p>
 <p>I will look at a few of them here.</p>
 

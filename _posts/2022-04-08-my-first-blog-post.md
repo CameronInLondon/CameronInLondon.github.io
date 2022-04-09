@@ -4,7 +4,7 @@
 
 #### Lets add some Python code to see what it looks like.
 
-```py
+```python
 print('Hello World')
 ```
 

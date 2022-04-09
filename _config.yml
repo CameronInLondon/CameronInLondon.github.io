@@ -28,6 +28,10 @@ rss: rss
 # kramdown:
 #   syntax_highlighter_opts:
 #     disable: true
+
+# syntax highlighting two options chadbaldwin's way or just use the standard built-in Github.
+# Problem with Github it does not highlight tSQL
+# Problem with Chads solution is I can not get Python highlighting to work.
     
 plugins:
   - jekyll-feed

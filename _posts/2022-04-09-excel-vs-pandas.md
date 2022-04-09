@@ -14260,8 +14260,10 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>This is one of a few blog posts I am moving from my old blog to here as I feel it is still relevant.</p>
 
+<br>
+<p>This is one of a few blog posts I am moving from my old blog to here as I feel it is still relevant.</p>
+<hr>
     
 <p>The last two years I have been using more Python Pandas to analyse data and tend to use Pandas as my go to these days. I wanted to write about some of the advantages of Pandas, when to use Pandas, and to compare some of the functions with Excel. So lets get to it.</p>
 <p>Excel is a great tool for quick one off analysis jobs, it is widely used by over 100 million users worldwide. But there are problems with excel like the lack of repeatability and the 1 million row limit. These issues can be addressed by using Python pandas. Pandas is a library for the popular high level programming language Python. Pandas gives the user easy access to a data structure called DataFrames which can be thought of as a two dimensional matrix much like a spreadsheet with rows and columns. Along with a toolset which can match excel blow for blow.</p>

@@ -14255,11 +14255,37 @@ a.anchor-link {
     init_mathjax();
     </script>
     <!-- End of mathjax configuration --></head>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Following from my last blog on xxxxx. I would like to continue this series on Python Pandas by discuss merging and joining data.</p>
+<p>Following from my last blog on grouping data in Pandas. I would like to continue this series on Python Pandas by discuss merging and joining data.</p>
 <p>When working with a single dataset there is little need for this functionality but bring two or more datasets together is when data analysis gets interesting.</p>
 
 </div>

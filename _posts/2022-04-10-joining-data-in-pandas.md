@@ -14648,7 +14648,7 @@ Merge() is more like a QSL join and aligns data using an index or a column on th
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Adding axis=-1 aligns vertically on the row axis. Note that the axis is aligned but the common columns are not.</p>
+<p>If we add axis=1 it aligns vertically on the row axis. Note that the axis is aligned but the common columns are not.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14956,7 +14956,7 @@ Merge() is more like a QSL join and aligns data using an index or a column on th
 <p>Joins can be tricky to learn but are essential for data analysis.</p>
 <p>There are four main types:</p>
 <ul>
-<li>Inner - this captures only rows are the same in both datasets</li>
+<li>Inner - this captures only rows that are the same in both datasets</li>
 <li>Outer - this captures all data from both dataframes</li>
 <li>Left - this captures all data from the left frame and matching data from the right frame</li>
 <li>Right - this captures all data from the right frame and matching data from the left frame</li>
@@ -14973,7 +14973,7 @@ Merge() is more like a QSL join and aligns data using an index or a column on th
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Left do some simple examples using df3 and df4. We will join on 'letters' like before. You can see that 'a' is the only common row between the two letters columns.</p>
+<p>Lets do some simple examples using df3 and df4. We will join on 'letters' like before. You can see that 'a' is the only common row between the two letters columns.</p>
 <p>First lets see df3 and df4.</p>
 
 </div>

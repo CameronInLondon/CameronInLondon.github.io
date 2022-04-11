@@ -117,7 +117,10 @@ I made a min and max salary fields using the salary range.
 A new dataframe was made using the following code. This would 
 
 ```python
-sal_df = df_DB['salary'].str.findall(r'(?:£)(\d+[,.]\d+)').apply(pd.Series).replace('[,.]', '', regex=True).rename({0:'sal_min', 1:'sal_max'}, axis=1)
+sal_df = (df_DB['salary'].str.findall(r'(?:£)(\d+[,.]\d+)')
+		.apply(pd.Series)
+		.replace('[,.]', '', regex=True)
+		.rename({0:'sal_min', 1:'sal_max'}, axis=1))
 ```
 
 I then made an average salary field using the logic that if there was no max salary rather than averaging just use the minimum salary.
@@ -135,8 +138,8 @@ I then put together a range of visualisations using the handy ```plot``` method 
 ### Descriptive statistics for the average salary.
 ```
 	    ave_salary
-count	143.0
-mean	51781.0
+count	    143.0
+mean	    51781.0
 std	    23618.0
 min	    16260.0
 25%	    36403.0
@@ -152,32 +155,35 @@ max	    155000.0
 	company_name	                        job_title	                                    ave_salary
 569	Digital Waffle	                        Principle Data Analytics Consultant	            155000.0
 438	Digital Waffle	                        Principle Data Analytics Consultant	            155000.0
-256	Oliver James Associates	                Senior Data Solution Architect	                125000.0
-251	BCT Resourcing	                        Senior Data Solution Architect	                125000.0
+256	Oliver James Associates	                Senior Data Solution Architect	                    125000.0
+251	BCT Resourcing	                        Senior Data Solution Architect	                    125000.0
 727	Client Server	                        Software Developer C# .Net Core Data Cloud	    110000.0
-247	La Fosse Associates	                    Lead Data Engineer	                            105000.0
+247	La Fosse Associates	                Lead Data Engineer	                            105000.0
 721	Technical Resources Ltd	                Senior/Principal Data Engineer GCP	            100000.0
-208	Intellectual Property Office	        Director of the Intellectual Property Framework	94400.0
+208	Intellectual Property Office	        Director of the Intellectual Property Framework	    94400.0
 695	Taylor Root Global Legal Recruitment	Model Validation Manager	                    85000.0
-120	LexisNexis Risk Solutions Group	        Software Engineering Lead ICIS Sutton	        82500.0
+120	LexisNexis Risk Solutions Group	        Software Engineering Lead ICIS Sutton	            82500.0
 ```
 
 ### Lowest salaries
 ```python
-df_final.query("ave_salary > 0").filter(['company_name', 'job_title', 'ave_salary']).sort_values(by='ave_salary', ascending=True).head(10)
+(df_final.query("ave_salary > 0")
+	.filter(['company_name', 'job_title', 'ave_salary'])
+	.sort_values(by='ave_salary', ascending=True)
+	.head(10))
 ```
 ```
 company_name	                            job_title	                                        ave_salary
 353	The Institute of Cancer Research	    Student Placement - Clinical Trial Assistant (...	16260.0
-89	Cathcart Associates	Graduate Database   Support Analyst	                                    21000.0
-127	HeadStart Speech & Behaviour Therapies	ABA Tutor - Autism	                                21710.0
-711	Client Server	                        IT Support / Operations Analyst SQL - E-commerce	22000.0
-28	The Monarch Partnership Limited	        Junior Pricing Analyst	                            23000.0
+89	Cathcart Associates	Graduate Database   Support Analyst	                                21000.0
+127	HeadStart Speech & Behaviour Therapies	    ABA Tutor - Autism	                                21710.0
+711	Client Server	                            IT Support / Operations Analyst SQL - E-commerce	22000.0
+28	The Monarch Partnership Limited	            Junior Pricing Analyst	                        23000.0
 408	TalentPool	                            Business Insight Analyst	                        23000.0
 673	Graduate Recruitment Bureau	            Graduate German Speaking Digital Marketing Ana...	24000.0
 565	I.T. Associates Ltd	                    Junior Procim Support/Business Analyst – 23 to...	25500.0
 159	Department for Transport	            Analysis Officer	                                26126.0
-504	Natural England	                        Earth Observation Analyst	                        26224.0
+504	Natural England	                            Earth Observation Analyst	                        26224.0
 
 ```
 
@@ -207,8 +213,8 @@ Here is salaries by job category
                 mean	    count	    count
 job_category			
 Data Analyst	41204.025	40	        192
-Data Engineer	65602.0	    3	        21
-Data Scientist	<NA>	    0	        7
+Data Engineer	65602.0	        3	        21
+Data Scientist	<NA>	        0	        7
 unknown	        72191.875	20	        94
 ```
 

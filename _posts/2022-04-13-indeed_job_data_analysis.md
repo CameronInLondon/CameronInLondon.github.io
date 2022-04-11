@@ -173,7 +173,7 @@ max	    155000.0
 	.head(10))
 ```
 ```
-company_name	                            job_title	                                        ave_salary
+company_name	                            	    job_title	                                        ave_salary
 353	The Institute of Cancer Research	    Student Placement - Clinical Trial Assistant (...	16260.0
 89	Cathcart Associates	Graduate Database   Support Analyst	                                21000.0
 127	HeadStart Speech & Behaviour Therapies	    ABA Tutor - Autism	                                21710.0

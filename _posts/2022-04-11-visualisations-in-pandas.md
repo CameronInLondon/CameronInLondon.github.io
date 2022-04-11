@@ -14997,9 +14997,9 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>A few years ago there were limited options for visualisations in Python really Matplotlib was your only option. Matplotlib dates back to 2003 and was designed to be similar to MatLab a scientific platform.</p>
-<p>R and ggplot set a standard the Matplotlib struggled to compete. ggplot used the so called Grammar of Graphics and offered animation and less verbose syntax.</p>
-<p>All that has changed now and there are a number of great libraries that outperform Matplotlib. Some of these new libraries offer interactivity.</p>
+<p>A few years ago there were limited options for visualisations in Python, really Matplotlib was your only option. Matplotlib dates back to 2003 and was designed to be similar to MatLab a scientific platform.</p>
+<p>With R and ggplot (another programming language and its visualization library) they set a standard for plotting which Matplotlib struggles to compete with on easy of use. ggplot used the so called 'Grammar of Graphics' and offered animation and less verbose syntax.</p>
+<p>All that has changed in recent years, now there are a number of great libraries that outperform Matplotlib for easy of use. Some of these new libraries offer interactivity.</p>
 <p>Each library has its own syntax which you need to learn, but it should not take long as many are designed to be easy to pickup.</p>
 <p>Lets have a quick look at plotly my current favourite.</p>
 

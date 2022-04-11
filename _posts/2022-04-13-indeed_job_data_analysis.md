@@ -104,7 +104,7 @@ The full code for this script can be found here [job_data_analysis](https://gith
 
 # Analysis of jobs data
 
-The second stage to this task involved using a notebook .ipynb file. If you have not worked with Jupyter notebooks read [here](https://en.wikipedia.org/wiki/Project_Jupyter#:~:text=It%20was%20spun%20off%20from,of%20the%20moons%20of%20Jupiter.) on their history. Notebooks have become an important part tool for data science and while they have issues e.g. lack of debugger. They are still the best way to analysis data with Python and in fact there are some analysts writing R in Jupyter notebooks now!
+The second stage to this task involved using a notebook .ipynb file. If you have not worked with Jupyter notebooks read [here](https://en.wikipedia.org/wiki/Project_Jupyter#:~:text=It%20was%20spun%20off%20from,of%20the%20moons%20of%20Jupiter.) on their history. Notebooks have become an important tool for data science and while they have issues e.g. lack of debugger. They are still the best way to analyse data with Python and in fact there are some analysts writing R in Jupyter notebooks now!
 
 After importing from the data from the DB first thing was to cleaning and enrich the data. I extracted the year/hour from the salary column and produced a salary time field. This could then be used to define between yearly and hourly pay. Note the use of the ```flags``` parameter this is due to the fact the is not ```case``` parameter in Pandas when using ```str.extract```.
 

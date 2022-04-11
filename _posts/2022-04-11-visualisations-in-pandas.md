@@ -15037,6 +15037,13 @@ a.anchor-link {
 
 
 
+    
+        <div class="jp-RenderedImage jp-OutputArea-output ">
+        <img src="/images/newplot9.png">
+        </div>
+    
+    
+    
 
 
 </div>
@@ -15083,6 +15090,12 @@ a.anchor-link {
 
 
 
+        <div class="jp-RenderedImage jp-OutputArea-output ">
+        <img src="/images/newplot10.png">
+        </div>
+    
+    
+    
 
 
 </div>
@@ -15122,6 +15135,14 @@ a.anchor-link {
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
+    
+    
+    
+        <div class="jp-RenderedImage jp-OutputArea-output ">
+        <img src="/images/newplot11.png">
+        </div>
+    
+    
 
 
 
@@ -15163,8 +15184,15 @@ a.anchor-link {
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-
+    
+    
+        <div class="jp-RenderedImage jp-OutputArea-output ">
+        <img src="/images/newplot12.png">
+        </div>
+    
+    
+    
+    
 
 </div>
 
@@ -15191,7 +15219,7 @@ a.anchor-link {
 <li>pygal</li>
 <li>Folium</li>
 </ul>
-<p>You can read other posts in this series on Pandas via my blog.</p>
+<p>This is one of a series of psot about Pandas on this blog, please checkout some more of the series.</p>
 
 </div>
 </div>

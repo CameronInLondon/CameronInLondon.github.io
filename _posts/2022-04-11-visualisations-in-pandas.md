@@ -15219,7 +15219,7 @@ a.anchor-link {
 <li>pygal</li>
 <li>Folium</li>
 </ul>
-<p>This is one of a series of psot about Pandas on this blog, please checkout some more of the series.</p>
+<p>This is one of a series of post about Pandas on this blog, please checkout some more of the series.</p>
 
 </div>
 </div>

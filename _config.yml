@@ -14,8 +14,9 @@ github_username: "CameronInLondon"
 #pinterest_username: username
 #youtube_username: username
 #googleplus_username: +username
-stackoverflow_username: "11515528"
-tableau_username: "https://public.tableau.com/app/profile/cam1226"
+# Below two I tried but does not work
+# stackoverflow_username: "11515528"
+# tableau_username: "https://public.tableau.com/app/profile/cam1226"
 
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########

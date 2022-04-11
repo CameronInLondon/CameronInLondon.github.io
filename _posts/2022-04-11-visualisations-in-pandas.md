@@ -14975,7 +14975,7 @@ a.anchor-link {
 
     
         <div class="jp-RenderedImage jp-OutputArea-output ">
-        <img src="newplot8.png">
+        <img src="/images/newplot8.png">
         </div>
     
     

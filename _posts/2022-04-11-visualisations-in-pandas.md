@@ -14973,6 +14973,13 @@ a.anchor-link {
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
+    
+        <div class="jp-RenderedImage jp-OutputArea-output ">
+        <img src="newplot8.png">
+        </div>
+    
+    
+    
 
 
 

@@ -1,17 +1,17 @@
-# Scrapping and analysing indeed job data 
+# Scraping and analysing indeed job data 
 
 Have you ever been looking at the job market, for your profession, and wanted better information? Being a data analyst gives me the tools to attain more data and analyse it. 
 
 I selected indeed.com as it is the largest job website in the world, boasting over 250 million monthly users with nearly 10 new job listings added every second. A quick look at the site and I could see that it has an API but as I was after a relatively small amount of data I decided to scrape the data.
 
-The process was broken down into two parts, first a wrote a python script for scrapping indeed.com, second I produced a notebook for analysing the data.
+The process was broken down into two parts, first a wrote a python script for scraping indeed.com, second I produced a notebook for analysing the data.
 
 My go to language is Python due to fast development time, large selection of libraries and excellent community.
 
 ---
 <br/>
 
-## Scrapping indeed.com
+## Scraping indeed.com
 
 First I needed to decide what I wanted to scrape, my personal focus in on Data analysis and data science. I decided to scape new jobs post in the last week. With this in hand I created a base URL as shown below. 
 

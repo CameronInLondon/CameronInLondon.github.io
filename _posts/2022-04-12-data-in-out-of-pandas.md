@@ -14255,11 +14255,39 @@ a.anchor-link {
     init_mathjax();
     </script>
     <!-- End of mathjax configuration --></head>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Following my last post on xxxx. In this post I will discuss getting data into and out of Pandas.</p>
+<p>Following my last post on visualisations in pandas. In this post I will discuss getting data into and out of Pandas.</p>
 <p>There are a large number of options for loading and saving your data. This page gives a full list <a href="https://pandas.pydata.org/docs/reference/io.html">https://pandas.pydata.org/docs/reference/io.html</a></p>
 <p>I will look at some of the more popular ones now.</p>
 

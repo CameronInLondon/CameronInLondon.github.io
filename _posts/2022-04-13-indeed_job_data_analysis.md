@@ -16,10 +16,10 @@ My go to language is Python, due to fast development time, large selection of li
 First I needed to decide what I wanted to scrape, my personal focus is on Data analysis and data science. I decided to scrape new jobs post in the last week. With this in hand I created a base URL as shown below. 
 
 ```python
-    job = "data+science+analyst"
-    Location = "London"
-    last_x_days = "7"
-    base_url = "https://uk.indeed.com/jobs?q="+job+"&l="+Location+"&fromage="+last_x_days
+job = "data+science+analyst"
+Location = "London"
+last_x_days = "7"
+base_url = "https://uk.indeed.com/jobs?q="+job+"&l="+Location+"&fromage="+last_x_days
 ```
 
 This allows me to cycle through pages using a while loop. I used ```Requests``` to return the pages and ```BeautifulSoup``` to process the HTML, it provides a user-friendly API to grab the data. I then wrote a number of functions, one to for each of the data points I wanted to grab from indeed. These included:

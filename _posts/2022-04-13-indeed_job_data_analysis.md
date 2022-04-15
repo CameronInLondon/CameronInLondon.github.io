@@ -155,7 +155,7 @@ After checking the data I then merged the frames with a simple concat using ```a
 
 I then put together a range of visualisations using the handy ```plot``` method that comes with Pandas.
 
-![Average Salary](image.jpg)
+![Average Salary](/images/ave_salary_hist.png)
 
 ### Descriptive statistics for the average salary.
 
@@ -173,7 +173,7 @@ min	    16260.0
 max	    155000.0
 ```
 
-![Top ten Job count by company](image.jpg)
+![Top ten Job count by company](/images/top_ten_companies_count_listing.png)
 
 ### Highest salaries
 ```

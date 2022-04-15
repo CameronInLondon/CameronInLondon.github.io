@@ -227,7 +227,7 @@ Analyst                    5
 Name: job_title, dtype: int64
 ```
 
-## Looking at data using the job_category field
+### Looking at data using the job_category field
 
 Looking at the current data captured there is a lack of salaries given; only about 25% of jobs advertise salaries which seems low to me. Of the current data scientists jobs scraped none have a salary advertised.
 

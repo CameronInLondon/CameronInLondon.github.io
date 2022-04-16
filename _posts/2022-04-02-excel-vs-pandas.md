@@ -1,10 +1,9 @@
-# Pandas vs Excel - why it might be time to use Pandas
-
+<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>excel_vs_pandas2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>2022-04-02-excel-vs-pandas</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14260,12 +14259,8 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-<br>
 <p>This is one of a few blog posts I am moving from my old blog to here as I feel it is still relevant.</p>
-<hr>
-    
-<p>The last two years I have been using more Python Pandas to analyse data and tend to use Pandas as my go to these days. I wanted to write about some of the advantages of Pandas, when to use Pandas, and to compare some of the functions with Excel. So lets get to it.</p>
+<h1 id="Pandas-vs-Excel---why-it-might-be-time-to-use-Pandas">Pandas vs Excel - why it might be time to use Pandas<a class="anchor-link" href="#Pandas-vs-Excel---why-it-might-be-time-to-use-Pandas">&#182;</a></h1><p>The last two years I have been using more Python Pandas to analyse data and tend to use Pandas as my go to these days. I wanted to write about some of the advantages of Pandas, when to use Pandas, and to compare some of the functions with Excel. So lets get to it.</p>
 <p>Excel is a great tool for quick one off analysis jobs, it is widely used by over 100 million users worldwide. But there are problems with excel like the lack of repeatability and the 1 million row limit. These issues can be addressed by using Python pandas. Pandas is a library for the popular high level programming language Python. Pandas gives the user easy access to a data structure called DataFrames which can be thought of as a two dimensional matrix much like a spreadsheet with rows and columns. Along with a toolset which can match excel blow for blow.</p>
 <h4 id="When-to-use-Pandas">When to use Pandas<a class="anchor-link" href="#When-to-use-Pandas">&#182;</a></h4><p>You can in fact replace your analysis workload in Excel with Pandas. This is due to Pandas ability to import and export to Excel files as well as visualise data. Should your datsets get larger than say 50,000. Or if you need tools that Excel can not offer. Pandas is build with Python which gives you access to over 100,000 Python library's. Should you need to do some web scraping, or do some machine learning these and many more tasks can be done with Python.</p>
 <h4 id="Advantages-of-Pandas">Advantages of Pandas<a class="anchor-link" href="#Advantages-of-Pandas">&#182;</a></h4><p>But as mentioned above Pandas is great for repeatability, once you have written a script you can run it over and over with the click of a button. This means when next months data arrives you can drop it in a folder and have it processed, or process it directly off a database.</p>
@@ -14383,45 +14378,45 @@ a.anchor-link {
   <tbody>
     <tr>
       <th>0</th>
-      <td>37</td>
-      <td>82</td>
-      <td>85</td>
-      <td>97</td>
+      <td>0</td>
+      <td>87</td>
+      <td>6</td>
+      <td>94</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>84</td>
-      <td>24</td>
-      <td>53</td>
-      <td>60</td>
+      <td>87</td>
+      <td>5</td>
+      <td>94</td>
+      <td>16</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>20</td>
-      <td>41</td>
+      <td>64</td>
       <td>1</td>
-      <td>9</td>
+      <td>18</td>
+      <td>14</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>91</td>
-      <td>19</td>
-      <td>57</td>
-      <td>71</td>
+      <td>34</td>
+      <td>39</td>
+      <td>62</td>
+      <td>12</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>71</td>
-      <td>33</td>
-      <td>45</td>
-      <td>93</td>
+      <td>7</td>
+      <td>64</td>
+      <td>6</td>
+      <td>20</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>48</td>
-      <td>66</td>
-      <td>6</td>
-      <td>28</td>
+      <td>50</td>
+      <td>90</td>
+      <td>72</td>
+      <td>36</td>
     </tr>
   </tbody>
 </table>
@@ -14547,25 +14542,18 @@ a.anchor-link {
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>37</td>
-      <td>82</td>
-      <td>85</td>
-      <td>97</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>20</td>
-      <td>41</td>
-      <td>1</td>
-      <td>9</td>
+      <th>3</th>
+      <td>34</td>
+      <td>39</td>
+      <td>62</td>
+      <td>12</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>48</td>
-      <td>66</td>
-      <td>6</td>
-      <td>28</td>
+      <td>50</td>
+      <td>90</td>
+      <td>72</td>
+      <td>36</td>
     </tr>
   </tbody>
 </table>
@@ -14647,55 +14635,55 @@ a.anchor-link {
   <tbody>
     <tr>
       <th>0</th>
-      <td>75</td>
-      <td>63</td>
-      <td>86</td>
-      <td>39</td>
+      <td>49</td>
+      <td>89</td>
+      <td>52</td>
+      <td>93</td>
       <td>a</td>
       <td>a</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>83</td>
-      <td>57</td>
-      <td>20</td>
-      <td>78</td>
+      <td>68</td>
+      <td>82</td>
+      <td>51</td>
+      <td>55</td>
       <td>a</td>
       <td>a</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>56</td>
-      <td>99</td>
-      <td>86</td>
-      <td>55</td>
+      <td>42</td>
+      <td>46</td>
+      <td>43</td>
+      <td>5</td>
       <td>b</td>
       <td>b</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2</td>
-      <td>22</td>
-      <td>78</td>
-      <td>45</td>
+      <td>14</td>
+      <td>12</td>
+      <td>42</td>
+      <td>15</td>
       <td>b</td>
       <td>b</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>42</td>
-      <td>93</td>
-      <td>41</td>
-      <td>78</td>
+      <td>96</td>
+      <td>46</td>
+      <td>18</td>
+      <td>32</td>
       <td>c</td>
       <td>c</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>0</td>
       <td>59</td>
-      <td>29</td>
-      <td>15</td>
+      <td>83</td>
+      <td>97</td>
+      <td>99</td>
       <td>c</td>
       <td>c</td>
     </tr>
@@ -14718,7 +14706,7 @@ a.anchor-link {
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Excel = VLOOKUP (lookup_value, table_array, column_index_num, [range_lookup])</span>
 
-<span class="c1"># Pandas merge or concat can be used, I like concat.</span>
+<span class="c1"># Pandas merge or concat can be used depending on the situation.</span>
 <span class="n">df3</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">,</span> <span class="n">df2</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">df3</span>
 <span class="c1"># When merging data in Pandas this page is helpful  https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html</span>
@@ -14775,79 +14763,79 @@ a.anchor-link {
   <tbody>
     <tr>
       <th>0</th>
-      <td>37</td>
-      <td>82</td>
-      <td>85</td>
-      <td>97</td>
-      <td>75</td>
-      <td>63</td>
-      <td>86</td>
-      <td>39</td>
+      <td>0</td>
+      <td>87</td>
+      <td>6</td>
+      <td>94</td>
+      <td>49</td>
+      <td>89</td>
+      <td>52</td>
+      <td>93</td>
       <td>a</td>
       <td>a</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>84</td>
-      <td>24</td>
-      <td>53</td>
-      <td>60</td>
-      <td>83</td>
-      <td>57</td>
-      <td>20</td>
-      <td>78</td>
+      <td>87</td>
+      <td>5</td>
+      <td>94</td>
+      <td>16</td>
+      <td>68</td>
+      <td>82</td>
+      <td>51</td>
+      <td>55</td>
       <td>a</td>
       <td>a</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>20</td>
-      <td>41</td>
+      <td>64</td>
       <td>1</td>
-      <td>9</td>
-      <td>56</td>
-      <td>99</td>
-      <td>86</td>
-      <td>55</td>
+      <td>18</td>
+      <td>14</td>
+      <td>42</td>
+      <td>46</td>
+      <td>43</td>
+      <td>5</td>
       <td>b</td>
       <td>b</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>91</td>
-      <td>19</td>
-      <td>57</td>
-      <td>71</td>
-      <td>2</td>
-      <td>22</td>
-      <td>78</td>
-      <td>45</td>
+      <td>34</td>
+      <td>39</td>
+      <td>62</td>
+      <td>12</td>
+      <td>14</td>
+      <td>12</td>
+      <td>42</td>
+      <td>15</td>
       <td>b</td>
       <td>b</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>71</td>
-      <td>33</td>
-      <td>45</td>
-      <td>93</td>
-      <td>42</td>
-      <td>93</td>
-      <td>41</td>
-      <td>78</td>
+      <td>7</td>
+      <td>64</td>
+      <td>6</td>
+      <td>20</td>
+      <td>96</td>
+      <td>46</td>
+      <td>18</td>
+      <td>32</td>
       <td>c</td>
       <td>c</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>48</td>
-      <td>66</td>
-      <td>6</td>
-      <td>28</td>
-      <td>0</td>
+      <td>50</td>
+      <td>90</td>
+      <td>72</td>
+      <td>36</td>
       <td>59</td>
-      <td>29</td>
-      <td>15</td>
+      <td>83</td>
+      <td>97</td>
+      <td>99</td>
       <td>c</td>
       <td>c</td>
     </tr>
@@ -14923,51 +14911,51 @@ a.anchor-link {
   <tbody>
     <tr>
       <th>A</th>
-      <td>60.5</td>
-      <td>55.5</td>
-      <td>59.5</td>
+      <td>43.5</td>
+      <td>49.0</td>
+      <td>28.5</td>
     </tr>
     <tr>
       <th>B</th>
-      <td>53.0</td>
-      <td>30.0</td>
-      <td>49.5</td>
+      <td>46.0</td>
+      <td>20.0</td>
+      <td>77.0</td>
     </tr>
     <tr>
       <th>C</th>
-      <td>69.0</td>
-      <td>29.0</td>
-      <td>25.5</td>
+      <td>50.0</td>
+      <td>40.0</td>
+      <td>39.0</td>
     </tr>
     <tr>
       <th>D</th>
-      <td>78.5</td>
-      <td>40.0</td>
-      <td>60.5</td>
+      <td>55.0</td>
+      <td>13.0</td>
+      <td>28.0</td>
     </tr>
     <tr>
       <th>E</th>
-      <td>79.0</td>
-      <td>29.0</td>
-      <td>21.0</td>
+      <td>58.5</td>
+      <td>28.0</td>
+      <td>77.5</td>
     </tr>
     <tr>
       <th>F</th>
-      <td>60.0</td>
-      <td>60.5</td>
-      <td>76.0</td>
+      <td>85.5</td>
+      <td>29.0</td>
+      <td>64.5</td>
     </tr>
     <tr>
       <th>G</th>
-      <td>53.0</td>
-      <td>82.0</td>
-      <td>35.0</td>
+      <td>51.5</td>
+      <td>42.5</td>
+      <td>57.5</td>
     </tr>
     <tr>
       <th>H</th>
-      <td>58.5</td>
-      <td>50.0</td>
-      <td>46.5</td>
+      <td>74.0</td>
+      <td>10.0</td>
+      <td>65.5</td>
     </tr>
   </tbody>
 </table>
@@ -15128,7 +15116,7 @@ Name: str, dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Lets use another string function to convert all string to upper case</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Lets use another string function to convert all strings to upper case</span>
 
 <span class="c1"># Excel - UPPER()</span>
 
@@ -15238,27 +15226,27 @@ Name: str, dtype: object</pre>
   <tbody>
     <tr>
       <th>0</th>
-      <td>37</td>
-      <td>82</td>
-      <td>85</td>
-      <td>97</td>
-      <td>75</td>
-      <td>63</td>
-      <td>86</td>
-      <td>39</td>
+      <td>0</td>
+      <td>87</td>
+      <td>6</td>
+      <td>94</td>
+      <td>49</td>
+      <td>89</td>
+      <td>52</td>
+      <td>93</td>
       <td>a</td>
       <td>a</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>84</td>
-      <td>24</td>
-      <td>53</td>
-      <td>60</td>
-      <td>83</td>
-      <td>57</td>
-      <td>20</td>
-      <td>78</td>
+      <td>87</td>
+      <td>5</td>
+      <td>94</td>
+      <td>16</td>
+      <td>68</td>
+      <td>82</td>
+      <td>51</td>
+      <td>55</td>
       <td>a</td>
       <td>a</td>
     </tr>
@@ -15401,36 +15389,36 @@ dtype: object</pre>
   <tbody>
     <tr>
       <th>a</th>
-      <td>121</td>
-      <td>106</td>
-      <td>138</td>
-      <td>157</td>
-      <td>158</td>
-      <td>120</td>
-      <td>106</td>
+      <td>87</td>
+      <td>92</td>
+      <td>100</td>
+      <td>110</td>
       <td>117</td>
+      <td>171</td>
+      <td>103</td>
+      <td>148</td>
     </tr>
     <tr>
       <th>b</th>
-      <td>111</td>
-      <td>60</td>
-      <td>58</td>
+      <td>98</td>
+      <td>40</td>
       <td>80</td>
+      <td>26</td>
+      <td>56</td>
       <td>58</td>
-      <td>121</td>
-      <td>164</td>
-      <td>100</td>
+      <td>85</td>
+      <td>20</td>
     </tr>
     <tr>
       <th>c</th>
-      <td>119</td>
-      <td>99</td>
-      <td>51</td>
-      <td>121</td>
-      <td>42</td>
-      <td>152</td>
-      <td>70</td>
-      <td>93</td>
+      <td>57</td>
+      <td>154</td>
+      <td>78</td>
+      <td>56</td>
+      <td>155</td>
+      <td>129</td>
+      <td>115</td>
+      <td>131</td>
     </tr>
   </tbody>
 </table>
@@ -15446,7 +15434,7 @@ dtype: object</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>That's all for now there are many more functions to try, Python has 68 functions and Pandas will have a similar number. Enjoy.</p>
+<p>That's all for now there are many more functions to try, this post has only scratched the surface. But learn all these and you will be well on your way with Pandas.</p>
 
 </div>
 </div>

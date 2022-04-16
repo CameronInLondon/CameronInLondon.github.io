@@ -64,15 +64,16 @@ From this:-
 ```
 
 To this:-
-```
-                                        job_title                                       company_name         company_location                    salary  date_added
-0                                    Data Analyst                                           Burberry                   London        No Salary provided  2022-04-08
-1                                    Data Analyst                                 NonStop Consulting         Remote in London        No Salary provided  2022-04-06
-2                                    Data Analyst                                          Ladder.io                   London        No Salary provided  2022-04-12
-3                 Genome Analyst / Data Scientist                                   Genomics England  Hybrid remote in London        No Salary provided  2022-04-12
-4   Graduate Data Science and Econometric Analyst                        Graduate Recruitment Bureau           United Kingdom  £42,000 - £45,000 a year  2022-04-06
+---
+|#|                                       job_title|                  company_name|         company_location|                    salary|  date_added|
+|-|                                               -|                             -|                        -|                         -|           -|
+|0|                                    Data Analyst|                      Burberry|                   London|        No Salary provided|  2022-04-08|
+|1|                                    Data Analyst|            NonStop Consulting|         Remote in London|        No Salary provided|  2022-04-06|
+|2|                                    Data Analyst|                     Ladder.io|                   London|        No Salary provided|  2022-04-12|
+|3|                 Genome Analyst / Data Scientist|              Genomics England|  Hybrid remote in London|        No Salary provided|  2022-04-12|
+|4|   Graduate Data Science and Econometric Analyst|   Graduate Recruitment Bureau|           United Kingdom|  £42,000 - £45,000 a year|  2022-04-06|
 
-```
+
 
 This was achieved using map and zip.
 
@@ -161,53 +162,56 @@ I then put together a range of visualisations using the handy ```plot``` method 
 
 It is always good to have a look at the descriptive statistics. When looking at wages many believe it is best practice to use the 50 percentile (median) rather than the mean. This is due to the robust nature of median. But for this analysis I have used mean.
 
-```
-	    ave_salary
-count	143.0
-mean	51781.0
-std	    23618.0
-min	    16260.0
-25%	    36403.0
-50%	    47450.0
-75%	    62000.0
-max	    155000.0
-```
+
+|	     |ave_salary|
+|-        |-        |
+|count   |	 143.0   |
+|mean	 |   51781.0 |
+|std	 |   23618.0 |
+|min	 |   16260.0 |
+|25%	 |   36403.0 |
+|50%	 |   47450.0 |
+|75%	 |   62000.0 |
+|max	 |   155000.0|
+
 
 ![Top ten Job count by company](/images/top_ten_companies_count_listing.png)
 
 ### Highest salaries
-```
-	company_name	                        job_title	                                    ave_salary
-569	Digital Waffle	                        Principle Data Analytics Consultant	            155000.0
-438	Digital Waffle	                        Principle Data Analytics Consultant	            155000.0
-256	Oliver James Associates	                Senior Data Solution Architect	                125000.0
-251	BCT Resourcing	                        Senior Data Solution Architect	                125000.0
-727	Client Server	                        Software Developer C# .Net Core Data Cloud	    110000.0
-247	La Fosse Associates	                    Lead Data Engineer	                            105000.0
-721	Technical Resources Ltd	                Senior/Principal Data Engineer GCP	            100000.0
-208	Intellectual Property Office	        Director of the Intellectual Property Framework	94400.0
-695	Taylor Root Global Legal Recruitment	Model Validation Manager	                    85000.0
-120	LexisNexis Risk Solutions Group	        Software Engineering Lead ICIS Sutton	        82500.0
-```
+
+|   	|company_name	                       | job_title	                                    |ave_salary     |
+|  --- 	|   ---                               | 	              ---                              |         --- |
+|569	|Digital Waffle	                     |   Principle Data Analytics Consultant	        |    155000.0   |
+|438	|Digital Waffle	                     |   Principle Data Analytics Consultant	        |    155000.0   |
+|256	|Oliver James Associates	            |    Senior Data Solution Architect	            |    125000.0   |
+|251	|BCT Resourcing	                     |   Senior Data Solution Architect	             |   125000.0       |
+|727	|Client Server	                      |  Software Developer C# .Net Core Data Cloud	  |  110000.0       |
+|247	|La Fosse Associates	                |    Lead Data Engineer	                        |    105000.0   |
+|721	|Technical Resources Ltd	            |    Senior/Principal Data Engineer GCP	        |    100000.0   |
+|208	|Intellectual Property Office	       | Director of the Intellectual Property Framework |	94400.0 |
+|695	|Taylor Root Global Legal Recruitment|	Model Validation Manager	                    |85000.0        |
+|120	|LexisNexis Risk Solutions Group	    |    Software Engineering Lead ICIS Sutton	     |   82500.0    |
+
 
 ### Lowest salaries
 ```python
 df_final.query("ave_salary > 0").filter(['company_name', 'job_title', 'ave_salary']).sort_values(by='ave_salary', ascending=True).head(10)
 ```
-```
-company_name	                            job_title	                                        ave_salary
-353	The Institute of Cancer Research	    Student Placement - Clinical Trial Assistant (...	16260.0
-89	Cathcart Associates	Graduate Database   Support Analyst	                                    21000.0
-127	HeadStart Speech & Behaviour Therapies	ABA Tutor - Autism	                                21710.0
-711	Client Server	                        IT Support / Operations Analyst SQL - E-commerce	22000.0
-28	The Monarch Partnership Limited	        Junior Pricing Analyst	                            23000.0
-408	TalentPool	                            Business Insight Analyst	                        23000.0
-673	Graduate Recruitment Bureau	            Graduate German Speaking Digital Marketing Ana...	24000.0
-565	I.T. Associates Ltd	                    Junior Procim Support/Business Analyst – 23 to...	25500.0
-159	Department for Transport	            Analysis Officer	                                26126.0
-504	Natural England	                        Earth Observation Analyst	                        26224.0
 
-```
+|   |    company_name	                       |                    job_title	                    | ave_salary|
+| ---|    ---                                |                  ---                                | ------|
+|353|	The Institute of Cancer Research	    |Student Placement - Clinical Trial Assistant (...	|16260.0|
+|89	|Cathcart Associates	Graduate Database |  Support Analyst	                                |21000.0|
+|127|	HeadStart Speech & Behaviour Therapies |	ABA Tutor - Autism	                            |21710.0|
+|711|	Client Server	                       | IT Support / Operations Analyst SQL - E-commerce	|22000.0|
+|28	|The Monarch Partnership Limited	      |  Junior Pricing Analyst	                            |23000.0|
+|408|	TalentPool	                          |  Business Insight Analyst	                        |23000.0|
+|673|	Graduate Recruitment Bureau	         |   Graduate German Speaking Digital Marketing Ana...	|24000.0|
+|565|	I.T. Associates Ltd	                 |   Junior Procim Support/Business Analyst – 23 to...	|25500.0|
+|159|	Department for Transport	            |Analysis Officer	                                |26126.0|
+|504|	Natural England	                     |   Earth Observation Analyst	                        |26224.0|
+
+
 
 ### Job title
 

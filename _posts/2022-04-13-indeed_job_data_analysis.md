@@ -66,7 +66,7 @@ From this:-
 To this:-
 ---
 |#|                                       job_title|                  company_name|         company_location|                    salary|  date_added|
-|-|                                               -|                             -|                        -|                         -|           -|
+|---|                                             ---|                         ---|                      ---|                       ---|         ---|
 |0|                                    Data Analyst|                      Burberry|                   London|        No Salary provided|  2022-04-08|
 |1|                                    Data Analyst|            NonStop Consulting|         Remote in London|        No Salary provided|  2022-04-06|
 |2|                                    Data Analyst|                     Ladder.io|                   London|        No Salary provided|  2022-04-12|

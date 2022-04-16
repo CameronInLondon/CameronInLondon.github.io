@@ -6,7 +6,7 @@ I selected indeed.com as it is the largest job website in the world, boasting ov
 
 The process was broken down into two parts, first I wrote a python script for scraping indeed.com, second I produced a notebook for analysing the data.
 
-My go to language is Python, due to fast development time, large selection of libraries and excellent community.
+My go to language is Python, due to its fast development time, large selection of libraries and excellent community.
 
 ---
 <br/>
@@ -160,7 +160,7 @@ I then put together a range of visualisations using the handy ```plot``` method 
 
 ### Descriptive statistics for the average salary.
 
-It is always good to have a look at the descriptive statistics. When looking at wages many believe it is best practice to use the 50 percentile (median) rather than the mean. This is due to the robust nature of median. But for this analysis I have used mean.
+It is always good to have a look at the descriptive statistics. When looking at wages many believe it is best practice to use the 50 percentile (median) rather than the mean. This is due to the robust nature of median. But for this analysis I have decided to just use mean.
 
 
 |	     |ave_salary|
@@ -178,6 +178,8 @@ It is always good to have a look at the descriptive statistics. When looking at 
 ![Top ten Job count by company](/images/top_ten_companies_count_listing.png)
 
 ### Highest salaries
+
+I pulled the highest salaries.
 
 |   	|company_name	                       | job_title	                                    |ave_salary     |
 |  --- 	|   ---                               | 	              ---                              |         --- |
@@ -215,7 +217,7 @@ df_final.query("ave_salary > 0").filter(['company_name', 'job_title', 'ave_salar
 
 ### Job title
 
-Most used job titles. One problem while trying to compare jobs is that companies do not always used the standard job titles. They prefer to use very specific job titles which are harder to compare like for like. In future I might look at using ML to try and cluster jobs based on the wording in the advert. But for now we will stick with the job_title and job_category fields.
+I looked at most used job titles. One problem while trying to compare jobs is that companies do not always use the standard job titles. They prefer to use very specific job titles which are harder to compare like for like. In future I might look at using ML to try and cluster jobs based on the wording in the advert. But for now we will stick with the job_title and job_category fields.
 
 ```
 Data Analyst              29
@@ -236,14 +238,15 @@ Name: job_title, dtype: int64
 Looking at the current data captured there is a lack of salaries given; only about 25% of jobs advertise salaries which seems low to me. Of the current data scientists jobs scraped none have a salary advertised.
 
 Here is salaries by job category.
-```
-	            ave_salary	            job_title
-                mean	    count	    count
-job_category			
-Data Analyst	41204.025	40	        192
-Data Engineer	65602.0	    3	        21
-Data Scientist	<NA>	    0	        7
-unknown	        72191.875	20	        94
-```
+
+|job_category    |ave_salary	|ave_salary  |job_title|
+|---|---|---|---
+|                |mean	    |count	|    count|
+|                |            |       |         |
+|Data Analyst	|41204.025	|40	  |      192|
+|Data Engineer	|65602.0	    |3	 |       21|
+|Data Scientist	|<NA>	    |0	|        7|
+|unknown	        |72191.875	|20	 |       94|
+
 
 I will develop this analysis in the future if there is a requirement. Hope you have enjoyed the read.

@@ -1,8 +1,8 @@
 # Scraping and analysing indeed job data 
 
-Have you ever been looking at the job market, for your profession, and wanted better information? Being a data analyst gives me the tools to attain more data and analyse it. 
+Have you ever been looking at the job market, and wanted better information? Wanted to know more about the numbers of jobs being advertised and the companies advertising. But you do not want to have to gather all the data manually. Being a data analyst gives me the skills and tools to attain the data and analyse it. So today I am going to show how it can be done.
 
-I selected indeed.com as it is the largest job website in the world, boasting over 250 million monthly users with nearly 10 new job listings added every second. A quick look at the site and I could see that it has an API; but as I was after a relatively small amount of data I decided to scrape the data instead.
+I have selected indeed.com as it is the largest job website in the world, boasting over 250 million monthly users with nearly 10 new job listings added every second. A quick look at the site and I could see that it has an API; but as I was after a relatively small amount of data I decided to scrape the data instead.
 
 The process was broken down into two parts, first I wrote a python script for scraping indeed.com, second I produced a notebook for analysing the data.
 
@@ -13,7 +13,7 @@ My go to language is Python, due to its fast development time, large selection o
 
 ## Scraping indeed.com
 
-First I needed to decide what I wanted to scrape, my personal focus is on Data analysis and data science. I decided to scrape new jobs post in the last week. With this in hand I created a base URL as shown below. 
+First I needed to decide what I wanted to scrape, my personal focus is on data so for this I will search 'Data analysis' and 'data science'. I decided to scrape new jobs posted in the last week. With this in hand I created a base URL as shown below and concatenated other search strings for job, location and timeframe.
 
 ```python
 job = "data+science+analyst"
@@ -29,8 +29,8 @@ This allows me to cycle through pages using a while loop. I used ```Requests``` 
 - company location
 - salary
 - date added to indeed
-- get page number
-- get total count of jobs
+- page number
+- total count of jobs
 
 Here is the function to get the company location, you can see that I had to remove the last item from the list as it consistently ended with a blank item.
 
@@ -40,19 +40,22 @@ def company_location(soup):
     data_str = ""
     result = ""
     for item in soup.find_all(class_="companyLocation"):
+        # build a string adding the new data each loop 
         data_str = data_str + item.get_text() + "\n"
+    # split the string and make a list
     result = data_str.split("\n")
-    result.pop() # remove unwanted last item
+    # remove unwanted last item
+    result.pop() 
     return result
 ```
 
 ### Job id
 
-I had hoped to be able to pull a unique job id from indeed. But the id seems to be dynamic and changes each load of the page. So I will have to work with potential duplicates while analysing until I find a better solution.
+I had hoped to be able to pull a unique job id from indeed. But the id seems to be dynamic and changes each load of the page. So I will have to deal with potential duplicates while analysing until I find a better solution.
 
 ### Reshape data
 
-I wanted to push the data to a pandas dataframe to make it easy to output. So the data needed to be transformed from a list of lists, the current data structure, to a dataframe.
+I wanted to push the data to a pandas DataFrame to make it easy to output ready for analysis. So the data needed to be transformed from a list of lists, the current data structure, to a DataFrame.
 
 From this:-
 ```
@@ -74,8 +77,7 @@ To this:-
 |4|   Graduate Data Science and Econometric Analyst|   Graduate Recruitment Bureau|           United Kingdom|  £42,000 - £45,000 a year|  2022-04-06|
 
 
-
-This was achieved using map and zip.
+Each list has one column rather than one row of data. So we need to transpose that which was achieved using map and zip. Zip takes iterables and combines them in a tuple. Map is used to execute a function on iterables. The resulting list can then be used to produce a DataFrame. A DataFrame is a matrix style data structure similar to a spreadsheet with rows and columns.
 
 ```python
 # transpose list of lists so it fits into a df
@@ -85,7 +87,7 @@ df = pd.DataFrame(l, columns=['job_title', 'company_name', 'company_location', '
 
 ### Enriching the data (feature engineering)
 
-Before outputting the data, I wanted two extra fields added, the first was job category. This would help when it came to analysis by grouping the jobs. I wrote the below function to help with this and then used pandas apply to run on the job_title field. I will be adding extra category's in the future but for now there are three.
+Before outputting the data, I wanted two extra fields added, the first was job category. This would help when it came to analysis by grouping the jobs into a small number of familiar titles. I wrote the below function to help with this and then used pandas apply to run on the job_title field. I will be adding extra category's in the future but for now there are three: Data Analyst, Data Scientist, and Data Engineer.
 
 ```python
 def map_to_job_category(x):
@@ -105,7 +107,7 @@ def map_to_job_category(x):
 
 ### Saving data
 
-I pushed the data into a pandas dataframe and originally output the data to a CSV file. But a database is better long term so I took advantage of the fact Python is packaged with sqlite3 a self-contained, full-featured SQL database. It is very easy to setup an sqlite DB, just import then create a connection object and execute the SQL.
+I pushed the data into a pandas DataFrame and originally output the data to a CSV file. But a database is better long term so I took advantage of the fact Python is packaged with sqlite3 a self-contained, full-featured SQL database. It is very easy to setup an sqlite DB, just import then create a connection object and execute the SQL.
 
 ```python
 import sqlite3

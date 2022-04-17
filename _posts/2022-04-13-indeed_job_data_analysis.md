@@ -245,10 +245,10 @@ Here is salaries by job category.
 |---|---|---|---
 |                |mean	    |count	|    count|
 |                |            |       |         |
-|Data Analyst	|41204.025	|40	  |      192|
+|Data Analyst	|41204.0	|40	  |      192|
 |Data Engineer	|65602.0	    |3	 |       21|
 |Data Scientist	|<NA>	    |0	|        7|
-|unknown	        |72191.875	|20	 |       94|
+|unknown	        |72191.8	|20	 |       94|
 
 
 I will develop this analysis in the future if there is a requirement. Hope you have enjoyed the read.

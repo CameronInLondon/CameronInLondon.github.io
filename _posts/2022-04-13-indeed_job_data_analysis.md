@@ -1,6 +1,6 @@
 # Scraping and analysing indeed job data 
 
-Have you ever been looking at the job market, and wanted better information? Wanted to know more about the numbers of jobs being advertised and the companies advertising. But you do not want to have to gather all the data manually. Being a data analyst gives me the skills and tools to attain the data and analyse it. So today I am going to show how it can be done.
+Have you ever been looking at the job market, and wanted better information? Wanted to know more about the number of jobs being advertised and the companies advertising. But you do not want to have to gather all the data manually. Being a data analyst gives me the skills and tools to attain the data and answer such questions. So today I am going to show how it can be done using Python.
 
 I have selected indeed.com as it is the largest job website in the world, boasting over 250 million monthly users with nearly 10 new job listings added every second. A quick look at the site and I could see that it has an API; but as I was after a relatively small amount of data I decided to scrape the data instead.
 

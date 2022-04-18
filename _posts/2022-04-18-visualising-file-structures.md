@@ -244,6 +244,6 @@ fig = px.sunburst(paths_df[['level_9', 'level_10', 'level_11', 'level_12']].drop
 fig.show()
 ```
 
-![Sunburst Chart](/images/sun_burst_chart2.png)
+![Another Sunburst Chart](/images/sun_burst_chart2.png)
 
-Now this works with a much larger folder structure of about 5,000 folders. I found above this it was to small to read. I hope you found this useful.
+Now this can work with a much larger folder structure of about 5,000 folders. But clearly you will not be able to read all folder names unless you increase the output image size. I found above this it was to small to read. I hope you found this useful.

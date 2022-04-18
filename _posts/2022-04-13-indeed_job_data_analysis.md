@@ -127,7 +127,7 @@ The full code for this script can be found here [job_data_analysis](https://gith
 
 <br/><br/>
 
-# Analysis of jobs data
+## Analysis of jobs data
 
 The second stage to this task involved using a notebook (.ipynb file). Notebooks help create reproducible, shareable, collaborative computational narratives. If you have not worked with Jupyter notebooks read [here](https://en.wikipedia.org/wiki/Project_Jupyter#:~:text=It%20was%20spun%20off%20from,of%20the%20moons%20of%20Jupiter.) on their history. Notebooks have become an important tool for data science and while they have issues e.g. lack of debugger. They are still the best way to analyse data with Python and are no long restricted to Python you can write R and a number of other languages in notebooks.
 

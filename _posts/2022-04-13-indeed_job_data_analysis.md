@@ -1,4 +1,4 @@
-# Scraping and analysing indeed job data 
+# Scraping and Analysing Indeed Job Data 
 
 Have you ever been looking at the job market, and wanted better information? Wanted to know more about the number of jobs being advertised and the companies advertising. But you do not want to have to gather all the data manually. Being a data analyst gives me the skills and tools to attain the data and answer such questions. So today I am going to show how it can be done using Python.
 
@@ -129,7 +129,7 @@ The full code for this script can be found here [job_data_analysis](https://gith
 
 ## Analysis of jobs data
 
-The second stage to this task involved using a notebook (.ipynb file). Notebooks help create reproducible, shareable, collaborative computational narratives. If you have not worked with Jupyter notebooks read [here](https://en.wikipedia.org/wiki/Project_Jupyter#:~:text=It%20was%20spun%20off%20from,of%20the%20moons%20of%20Jupiter.) on their history. Notebooks have become an important tool for data science and while they have issues e.g. lack of debugger. They are still the best way to analyse data with Python and are no long restricted to Python you can write R and a number of other languages in notebooks.
+The second stage to this task involved using a notebook (.ipynb file). Notebooks help create reproducible, shareable, collaborative computational narratives. If you have not worked with Jupyter notebooks read [here](https://en.wikipedia.org/wiki/Project_Jupyter#:~:text=It%20was%20spun%20off%20from,of%20the%20moons%20of%20Jupiter.) on their history. Notebooks have become an important tool for data science and while they have issues e.g. lack of debugger. They are still the best way to analyse data with Python but are no longer restricted to Python you can write R and a number of other languages in notebooks.
 
 After importing the data from the DB, first thing was to clean and enrich the data. I extracted the year/hour from the salary column and produced a salary time field. This could then be used to define between yearly and hourly pay. Note the use of the ```flags``` parameter, this is due to the fact there is no ```case``` parameter in Pandas when using ```str.extract```.
 
@@ -137,7 +137,7 @@ After importing the data from the DB, first thing was to clean and enrich the da
 df_DB['salary_time'] = df_DB['salary'].str.extract('(year|hour)', flags=re.IGNORECASE)
 ```
 
-I made a min and max salary fields using the salary range.
+I made min and max salary fields using the salary range.
 
 A new dataframe called ```sal_df``` was made using the following code. 
 
@@ -251,4 +251,4 @@ Here is salaries by job category.
 |unknown	        |72191.8	|20	 |       94|
 
 
-I will develop this analysis in the future if there is a requirement. Hope you have enjoyed the read.
+I will develop this analysis in the future if there is a requirement. I am thinking to pull technical requirements, and years of experience data. Hope you have enjoyed the read.

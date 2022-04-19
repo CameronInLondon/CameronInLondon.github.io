@@ -4,7 +4,7 @@
 
 Recently I had a business requirement to visualise a network file structure as part of an analysis. File strutures can be very important utilities within a business, used by hundreds or maybe thousands of users each day. Maybe hosted on a on premises server or these days more likely in the cloud. While search is increasingly used to find files and the cloud has changed things somewhat. There is still need for a well structured file system in many business settings. While the IT department might have overall responsibility they do not specify the structure, that is the businesses job. 
 
-I was to look at a network drive windows file system, and analyse to see if over time inconsistencies in the structure had creeped in. I wanted to be able to visualise this in a way that could give a view of strutures, names and also show file size or frequency. Now there are a number of ways to visualise a tree structure using python, one good resource is [this page](https://stackoverflow.com/questions/7670280/tree-plotting-in-python). But for me I decided to use Plotly's [sunburst](https://plotly.com/python/sunburst-charts/) visualisation. Below I will walk you through how I did that. I have made a dummy file structure for this example which contains some 40 folders and 42 files but this technique can work with thousands of folders.
+I was to look at a network drive windows file system, and analyse to see if over time inconsistencies in the structure had crept in. I wanted to be able to visualise this in a way that could give a view of strutures, names and also show file size or frequency. There are a number of ways to visualise a tree structure using python, one good resource is [this page](https://stackoverflow.com/questions/7670280/tree-plotting-in-python). But for me I decided to use Plotly's [sunburst](https://plotly.com/python/sunburst-charts/) visualisation. Below I will walk you through how I did this. I have made a dummy file structure for this example which contains some 40 folders and 42 files but this technique can work with thousands of folders.
 
 ### Imports
 
@@ -20,7 +20,7 @@ plt.style.use('fivethirtyeight')
 pd.set_option('display.float_format', lambda x: '%.2f' % x)
 ```
 
-I used [folderstats](https://pypi.org/project/folderstats/) to pull the file structure, note this will be slow with large file strutures. For me it took about a hour to pull 300,000 folders/files and their details. In future I would look for a way of speeding up this process but for now this worked and once pulled I saved the dataframe to a csv file for analysis. Here is how you run folderstats:
+I used [folderstats](https://pypi.org/project/folderstats/) to pull the file structure, note this will be slow with large file strutures. For me it took about a hour to pull 300,000 folders/files and their details. In future I would look for a way of speeding up this process. For now this worked and once pulled I saved the dataframe to a csv file for analysis. Here is how you run folderstats:
 
 ```python
 path = r'Z:\the_path'
@@ -45,7 +45,7 @@ The output is a dataframe with these fields.
 
 ### Checking and enriching data
 
-After doing some basic checking of the data looking at n/a's and data types etc. I then moved on to enrich the data. One problem the business had come across was long folder/files names pushing 256 characters. So I used ```str.len()``` one of Pandas vectorized string functions in the below code to add a new field called ```path_length```. 
+After doing some basic checking of the data, looking at n/a's and data types etc. I then moved on to enrich the data. One problem the business had come across was long folder/files names pushing 256 characters. So I used ```str.len()``` one of Pandas vectorized string functions in the below code to add a new field called ```path_length```. 
 
 ```python
 # add length of path field
@@ -54,7 +54,7 @@ df_new['path_length'] = df_new['path'].str.len()
 
 ### Checking the file path using pathlib
 
-At work the situation was different levels of the path structure had meaning to the business so I want to be able to extract this data. The best tool for this job is the pathlib library, I tend to just import ```Path``` class. Here are some of the useful methods.
+With the path I was working with different levels of the path structure had meaning to the business so I want to be able to extract this data. The best tool for this job is the pathlib library (in Python 3.4 and above), I tend to just import the ```Path``` class. Here are some of the useful methods.
 
 ```python
 # Make a path object
@@ -232,7 +232,7 @@ array([['file_structure', 'folder1', 'folder2', 'aa 2020',
        ['file_structure', 'folder2', 'folder3', 'bb', None]], dtype=object)
 ```
 
-### visualise new paths df
+### Visualise new paths df
 
 I then used the sunburst visualisation to view the paths DataFrame.
 ```python
@@ -246,4 +246,4 @@ fig.show()
 
 ![Another Sunburst Chart](/images/sunburst_chart2.png)
 
-Now this can work with a much larger folder structure of about 5,000 folders. But clearly you will not be able to read all folder names unless you increase the output image size. I found above this it was to small to read. I hope you found this useful.
+This can work with a much larger folder structure of about 5,000 folders. But you will not be able to read all folder names unless you increase the output image size. If the folder structure is to large you just wont be able to read the output. I hope you found this useful.

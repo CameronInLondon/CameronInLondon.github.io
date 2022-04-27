@@ -14259,7 +14259,7 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In my last blog I discussed xxx in Python Pandas. Today I am going to looking at visualisations in Pandas.</p>
+<p>In my last blog I discussed joining datasets in Python Pandas. Today I am going to looking at visualisations in Pandas.</p>
 <p>I will focus on using Pandas to create visualisations but will also touch on other libraries.</p>
 <p>Visualising your date is key as it is hard to get meaning from a table of data. As they say "a picture is worth a thousand words."</p>
 <p>Also once your dataset gets big there is really no other way to get a true sense of the data without aggregation, which loses detail.</p>

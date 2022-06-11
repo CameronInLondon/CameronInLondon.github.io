@@ -1,7 +1,7 @@
 # PDF Acroforms Extracting Data to Database using Python
 
 ## Introduction
-In todays post I am going to show you how to build a datapipline that pulls data from a PDF form, reshapes that data and inserts into a database. This will be done using Python and a SQLite database. Why would you want to do this? Well there are thousands of business and governments that still rely on PDF forms as a means to collecting data. PDF forms are quick and easy to produce, without the need for a developer, and give a flexibility and agility to companies. Clearly there are a number of downside of PDF forms, for one they do not scale the way an online form does.
+In todays post I am going to show you how to build a data pipeline that pulls data from a PDF form, reshapes that data and inserts into a database. This will be done using Python and a SQLite database. Why would you want to do this? Well there are thousands of business and governments that still rely on PDF forms as a means to collecting data. PDF forms are quick and easy to produce, without the need for a developer, and give a flexibility and agility to companies. Clearly there are a number of downside of PDF forms, for one they do not scale the way an online form does.
 
 ## PDF forms
 

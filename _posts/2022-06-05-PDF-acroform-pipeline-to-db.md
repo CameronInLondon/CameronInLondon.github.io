@@ -1,7 +1,7 @@
 # PDF Acroforms Extracting Data to Database using Python
 
 ## Introduction
-In todays post I am going to show you how to build a data pipeline that pulls data from a PDF form, reshapes that data and inserts into a database. This will be done using Python and a SQLite database. Why would you want to do this? Well there are thousands of business and governments that still rely on PDF forms as a means to collecting data. PDF forms are quick and easy to produce, without the need for a developer, and give a flexibility and agility to companies. Clearly there are a number of downside of PDF forms, for one they do not scale the way an online form does.
+In todays post I am going to show you how to build a data pipeline that pulls data from a PDF form, reshapes that data and inserts into a database. This will be done using Python and a SQLite database. Why would you want to do this I hear you say? Well there are thousands of business and governments that still rely on PDF forms as a means to collecting data. PDF forms are quick and easy to produce, without the need for a developer, and give flexibility and agility to companies. Clearly there are a number of downsides with PDF forms, for one they do not scale the way an online form does.
 
 ## PDF forms
 
@@ -12,9 +12,10 @@ I should at this point say there are two types of PDF form out there. XFA and Ac
 - PDF Studio (Mac, Windows & Linux) ...
 - Nitro PDF Pro (Windows only) ...
 - Adobe Acrobat DC (Mac & Windows)
+- Adobe Indesign (Mac & Windows)
 - and many more
 
-For this demo I will be using MS Word and Acrobat Pro to make a simple form with three fields. By adding the field names with lines next to them in Word and saving to a PDF you have already done half the job. Opening the PDF in Acrobat and click the Prepare Form button. This gives you the option to automate the form field production in Acrobat, while this automation is far from perfect it does the job for basic forms. Should you want to use dropdowns fields then they will have to be added by hand. The field names are important as we will need them later.
+For this demo I will be using MS Word and Acrobat Pro to make a simple form with three fields. I have not tested this script on Acroforms made with other software. By adding the field names with lines next to them in Word and saving to a PDF you have already done half the job. Opening the PDF in Acrobat and click the Prepare Form button. This gives you the option to automate the form field production in Acrobat, while this automation is far from perfect it does the job for basic forms. Should you want to use dropdown fields then they will have to be added by hand in Acrobat. The field names are important as we will need them later.
 
 ## Importing libraries
 
@@ -38,7 +39,7 @@ from glob import iglob
 
 ## PDFMiner
 
-The code for using PDFMiner to extract the field text can be taken from the docs [here](https://pdfminersix.readthedocs.io/en/develop/howto/acro_forms.html). The two functions below do most of the work and return a list of dictionaries. I have added a list at the bottom for loop, this will allow multiple forms to be processed.
+The code for using PDFMiner to extract the field text can be taken from the docs [here](https://pdfminersix.readthedocs.io/en/develop/howto/acro_forms.html). The two functions below do most of the work and return a list of dictionaries. I have only made two small changes to the the code from the docs. One I added a list at the bottom for loop, this will allow multiple forms to be processed. Two I wanted to remove spaces and add underlines for the keys so used replace to do this.
 
 ```python
 def decode_value(value):
@@ -94,7 +95,7 @@ def extract_pdf_text(the_path):
 
 ## Differing forms
 
-Now one problem you might have is if there are different versions of a forms which have differing fields. You can have extra fields in the database to cover a range of form senarios but when using SQLs VALUES function you will get a bindings error e.g. ```SQLite error: You did not supply a value for binding X``` if you do not push all the fields as per the SQL INSERT Query. One solution to this problem is to have multiple queries, but a more elegant solution is to handle this in Python by fill any blank fields with nulls. The below code will do this for us. I used list while iterating the dictionary to avoid the ```RuntimeError: dictionary changed size during iteration```.
+Now one problem you might have is if there are different versions of a form which have differing fields. You can have extra fields in the database to cover a range of form senarios but when using SQLs VALUES function you will get a bindings error e.g. ```SQLite error: You did not supply a value for binding X``` if you do not push all the fields as per the SQL INSERT Query. One solution to this problem is to have multiple queries, but a more elegant solution is to handle this in Python by filling any blank fields with nulls. The code below will do this for us. I used list while iterating the dictionary to avoid the ```RuntimeError: dictionary changed size during iteration```.
 
 ```python
 def standardise_details_dict():
@@ -175,7 +176,7 @@ def loop_files():
 
 ## Running the code
 
-Below is the main block which calls the functions. ```json.dumps``` is a nice way to print dictionaries which is helpful when debugging. I used pandas to query the database to make sure the data inserted correctly.
+Below is the main block which calls the functions. ```json.dumps``` is a nice way to print dictionaries which is helpful when debugging. I used pandas to query the database to make sure the data was inserted correctly.
 
 ```python
 if __name__ == "__main__":
